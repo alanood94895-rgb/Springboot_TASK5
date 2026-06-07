@@ -1,55 +1,34 @@
 package com.example.Springboot;
 
 public class UpdateDemo {
-    public static void main (String[] args){
-        String currentStudentName = "Ahamed";
+
+    public static void main(String[] args) {
+
+        String currentStudentName = "Ahmed";
+
         String newStudentName = "Ali";
-        String updateStatus;
 
-        System.out.println("Original Student Name: " + currentStudentName);
-        System.out.println("Original Student Name: " + newStudentName);
+        boolean isUpdated;
 
+        System.out.println("Current Student Name: " + currentStudentName);
+        System.out.println("New Student Name: " + newStudentName);
 
         if (!currentStudentName.equals(newStudentName)) {
 
             currentStudentName = newStudentName;
-            updateStatus = "Successful";
+            isUpdated = true;
 
-            System.out.println("Student name was updated successfully.");
+            System.out.println("Student name updated successfully.");
 
         } else {
-            updateStatus = "No Change Required";
 
-            System.out.println("No update performed " +
-                    "The existing value already matches the new value");
+            isUpdated = false;
+
+            System.out.println("No update required. Student name is already current.");
         }
+
         System.out.println("Final Student Name: " + currentStudentName);
 
-        System.out.println("Update Status: " + updateStatus);
-
-
-        // TASK 27
-            Student student = new Student(101, "Ahmed", "A");
-            Student student1 = new Student(102, "Sara", "B");
-
-            System.out.println("Original Student Details");
-            System.out.println("Student ID: " + student.getStudentId());
-            System.out.println("Student Name: " + student.getStudentName());
-            System.out.println("Grade: " + student.getGrade());
-
-            student.setStudentName("Ali");
-            student1.setGrade("A");
-
-            System.out.println("\n=== Updated Student Details ===");
-            System.out.println("Student ID: " + student.getStudentId());
-            System.out.println("Student Name: " + student.getStudentName());
-            System.out.println("Grade: " + student.getGrade());
-
-            System.out.println("\n=== Updated Student1 Details ===");
-            System.out.println("Student ID: " + student1.getStudentId());
-            System.out.println("Student Name: " + student1.getStudentName());
-            System.out.println("Grade: " + student1.getGrade());
-        }
+        System.out.println("Update Status: " + isUpdated);
     }
-
-
+}
