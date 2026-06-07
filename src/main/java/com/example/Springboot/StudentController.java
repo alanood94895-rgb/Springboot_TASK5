@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class StudentController {
 private Student student = new Student(101, "Ahmed", "A");
 
-    @PutMapping("/update-student")
+    @PutMapping("/updateStudent")
     public String updateStudentName(
             @RequestParam String name) {
 
