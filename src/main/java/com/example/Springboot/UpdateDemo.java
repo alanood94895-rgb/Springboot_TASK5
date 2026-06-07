@@ -1,10 +1,15 @@
 package com.example.Springboot;
 
 public class UpdateDemo {
-    String currentStudentName = "Ahamed";
-    String newStudentName = "Ali";
+    public static void main (String[] args){
+        String currentStudentName = "Ahamed";
+        String newStudentName = "Ali";
+        String updateStatus;
 
-    String updateStatus;
+        System.out.println();
+
+    }
+
 
 
 }
