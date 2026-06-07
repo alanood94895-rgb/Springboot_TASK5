@@ -29,7 +29,6 @@ public class UpdateDemo {
 
 
 
-        // TASK 27
             Student student = new Student(101, "Ahmed", "A");
             Student student1 = new Student(102, "Sara", "B");
 
