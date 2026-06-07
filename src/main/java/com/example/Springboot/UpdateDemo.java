@@ -12,6 +12,11 @@ public class UpdateDemo {
 
         if (!currentStudentName.equals(newStudentName)) {
 
+            currentStudentName = newStudentName;
+            updateStatus = "Successful";
+
+            System.out.println("Student name was updated successfully.");
+
         }
 
 
