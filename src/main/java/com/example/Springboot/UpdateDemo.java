@@ -9,7 +9,10 @@ public class UpdateDemo {
         System.out.println("Original Student Name: " + currentStudentName);
         System.out.println("Original Student Name: " + newStudentName);
 
-    }
+
+        if (!currentStudentName.equals(newStudentName)) {
+
+        }
 
 
 
