@@ -25,7 +25,9 @@ public class UpdateDemo {
         }
         System.out.println("Final Student Name: " + currentStudentName);
 
-        }
+        System.out.println("Update Status: " + updateStatus);
+
+    }
 
 
 
