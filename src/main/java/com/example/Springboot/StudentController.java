@@ -12,6 +12,10 @@ public class StudentController {
 
         student.setStudentName("Ali");
 
+        System.out.println("\n=== Updated Student Details ===");
+        System.out.println("Student ID: " + student.getStudentId());
+        System.out.println("Student Name: " + student.getStudentName());
+        System.out.println("Grade: " + student.getGrade());
     }
 }
 
