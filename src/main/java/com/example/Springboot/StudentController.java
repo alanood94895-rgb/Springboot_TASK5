@@ -10,6 +10,8 @@ public class StudentController {
         System.out.println("Student Name: " + student.getStudentName());
         System.out.println("Grade: " + student.getGrade());
 
+        student.setStudentName("Ali");
+
     }
 }
 
