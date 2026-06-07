@@ -7,6 +7,9 @@ public class Student {
     private String Grade;
 
     public Student (Integer StudentId,String StudentName,String Grade){
+        this.StudentId = StudentId;
+        this.StudentName = StudentName;
+        this.Grade = Grade;
 
     }
 }
