@@ -6,4 +6,7 @@ public class Student {
     private String StudentName;
     private String Grade;
 
+    public Student (Integer StudentId,String StudentName,String Grade){
+
+    }
 }
