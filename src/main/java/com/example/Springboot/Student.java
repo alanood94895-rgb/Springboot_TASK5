@@ -2,37 +2,37 @@ package com.example.Springboot;
 
 public class Student {
 
-    private Integer StudentId;
-    private String StudentName;
-    private String Grade;
+    private int studentId;
+    private String studentName;
+    private String grade;
 
-    public Student(int StudentId, String StudentName, String Grade) {
-        this.StudentId = StudentId;
-        this.StudentName = StudentName;
-        this.Grade = Grade;
+    public Student(int studentId, String studentName, String grade) {
+        this.studentId = studentId;
+        this.studentName = studentName;
+        this.grade = grade;
     }
 
     public int getStudentId() {
-        return StudentId;
+        return studentId;
     }
 
     public void setStudentId(int studentId) {
-        this.StudentId = studentId;
+        this.studentId = studentId;
     }
 
     public String getStudentName() {
-        return StudentName;
+        return studentName;
     }
 
     public void setStudentName(String studentName) {
-        this.StudentName = studentName;
+        this.studentName = studentName;
     }
 
     public String getGrade() {
-        return Grade;
+        return grade;
     }
 
     public void setGrade(String grade) {
-        this.Grade = grade;
+        this.grade = grade;
     }
 }
