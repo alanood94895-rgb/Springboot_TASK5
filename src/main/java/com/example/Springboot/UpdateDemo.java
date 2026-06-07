@@ -7,6 +7,7 @@ public class UpdateDemo {
         String updateStatus;
 
         System.out.println("Original Student Name: " + currentStudentName);
+        System.out.println("Original Student Name: " + newStudentName);
 
     }
 
