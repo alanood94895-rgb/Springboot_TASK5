@@ -20,15 +20,12 @@ public class UpdateDemo {
         } else {
             updateStatus = "No Change Required";
 
-            System.out.println("No update performed. " +
-                    "The existing value already matches the new value.");
+            System.out.println("No update performed " +
+                    "The existing value already matches the new value");
         }
         System.out.println("Final Student Name: " + currentStudentName);
 
         System.out.println("Update Status: " + updateStatus);
 
     }
-
-
-
 }
