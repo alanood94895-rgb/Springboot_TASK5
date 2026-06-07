@@ -1,28 +1,24 @@
 package com.example.Springboot;
 
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class StudentController {
-    public static void main(String[] args) {
+private Student student = new Student(101, "Ahmed", "A");
 
-        Student student = new Student(101, "Ahmed", "A");
-        Student student1 = new Student(102, "Sara", "B");
+    @PutMapping("/update-student")
+    public String updateStudentName(
+            @RequestParam String name) {
 
-        System.out.println("Original Student Details");
-        System.out.println("Student ID: " + student.getStudentId());
-        System.out.println("Student Name: " + student.getStudentName());
-        System.out.println("Grade: " + student.getGrade());
+        String previousName =
+                student.getStudentName();
 
-        student.setStudentName("Ali");
-        student1.setGrade("A");
+        student.setStudentName(name);
 
-        System.out.println("\n=== Updated Student Details ===");
-        System.out.println("Student ID: " + student.getStudentId());
-        System.out.println("Student Name: " + student.getStudentName());
-        System.out.println("Grade: " + student.getGrade());
-
-        System.out.println("\n=== Updated Student1 Details ===");
-        System.out.println("Student ID: " + student1.getStudentId());
-        System.out.println("Student Name: " + student1.getStudentName());
-        System.out.println("Grade: " + student1.getGrade());
+        return "Student name updated successfully.\n"
+                + "Previous Name: " + previousName + "\n"
+                + "New Name: " + student.getStudentName();
     }
 }
-

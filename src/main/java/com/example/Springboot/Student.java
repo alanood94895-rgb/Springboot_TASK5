@@ -6,12 +6,18 @@ public class Student {
     private String StudentName;
     private String Grade;
 
-    public Integer getStudentId() {
+    public Student(int StudentId, String StudentName, String Grade) {
+        this.StudentId = StudentId;
+        this.StudentName = StudentName;
+        this.Grade = Grade;
+    }
+
+    public int getStudentId() {
         return StudentId;
     }
 
-    public void setStudentId(Integer studentId) {
-        StudentId = studentId;
+    public void setStudentId(int studentId) {
+        this.StudentId = studentId;
     }
 
     public String getStudentName() {
@@ -19,7 +25,7 @@ public class Student {
     }
 
     public void setStudentName(String studentName) {
-        StudentName = studentName;
+        this.StudentName = studentName;
     }
 
     public String getGrade() {
@@ -27,13 +33,6 @@ public class Student {
     }
 
     public void setGrade(String grade) {
-        Grade = grade;
-    }
-
-    public Student (Integer StudentId, String StudentName, String Grade){
-        this.StudentId = StudentId;
-        this.StudentName = StudentName;
-        this.Grade = Grade;
-
+        this.Grade = grade;
     }
 }
