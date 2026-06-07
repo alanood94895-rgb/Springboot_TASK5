@@ -23,6 +23,8 @@ public class UpdateDemo {
             System.out.println("No update performed. " +
                     "The existing value already matches the new value.");
         }
+        System.out.println("Final Student Name: " + currentStudentName);
+
         }
 
 
