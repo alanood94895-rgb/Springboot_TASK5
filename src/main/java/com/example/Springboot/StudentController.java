@@ -5,6 +5,11 @@ public class StudentController {
 
         Student student = new Student(101, "Ahmed", "A");
 
+        System.out.println("Original Student Details");
+        System.out.println("Student ID: " + student.getStudentId());
+        System.out.println("Student Name: " + student.getStudentName());
+        System.out.println("Grade: " + student.getGrade());
+
     }
 }
 
