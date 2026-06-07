@@ -12,12 +12,17 @@ public class StudentController {
         System.out.println("Grade: " + student.getGrade());
 
         student.setStudentName("Ali");
-        student1.setGrade("B");
+        student1.setGrade("A");
 
         System.out.println("\n=== Updated Student Details ===");
         System.out.println("Student ID: " + student.getStudentId());
         System.out.println("Student Name: " + student.getStudentName());
         System.out.println("Grade: " + student.getGrade());
+
+        System.out.println("\n=== Updated Student1 Details ===");
+        System.out.println("Student ID: " + student1.getStudentId());
+        System.out.println("Student Name: " + student1.getStudentName());
+        System.out.println("Grade: " + student1.getGrade());
     }
 }
 
